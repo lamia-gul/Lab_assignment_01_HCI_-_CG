@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Predictive Models – GOMS & KLM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>GOMS and Keystroke Level Model (KLM)</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>KLM Operators</h2>
+            <p>The Keystroke Level Model (KLM) predicts execution time for experts. According to <strong>Dix Ch. 12 (p. 438)</strong>, the operators are:</p>
+            
+            <table border="1">
+                <caption>KLM Operator Execution Times</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Operator</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Time (s)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><th scope="row">K</th><td>Keystroking</td><td>0.20</td></tr>
+                    <tr><th scope="row">B</th><td>Button press</td><td>0.10</td></tr>
+                    <tr><th scope="row">P</th><td>Pointing</td><td>1.10</td></tr>
+                    <tr><th scope="row">H</th><td>Homing (hand to device)</td><td>0.40</td></tr>
+                    <tr><th scope="row">M</th><td>Mental preparation</td><td>1.35</td></tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Reference: Dix, A. et al. (2004). Ch. 12, p. 437.</p>
+        <p><a href="index.html">Return to Home</a></p>
+    </footer>
+</body>
+</html>

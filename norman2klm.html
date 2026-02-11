@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cognitive Models - Lab 01</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>GOMS and Keystroke Level Model (KLM)</h1>
+    </header>
+
+<main>
+    <section>
+      <h2>The Keystroke-Level Model (KLM)</h2>
+      <p>
+        KLM is a low-level GOMS model that predicts the time it takes an expert to perform a task 
+        without errors.
+      </p>
+      
+      <table border="1">
+        <caption>Table 12.1: KLM Operator Times</caption>
+        <thead>
+          <tr>
+            <th scope="col">Operator</th>
+            <th scope="col">Description</th>
+            <th scope="col">Time (Seconds)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">K</th><td>Keystroking (Type a key)</td><td>0.20</td></tr>
+          <tr><th scope="row">P</th><td>Pointing (Move mouse to target)</td><td>1.10</td></tr>
+          <tr><th scope="row">H</th><td>Homing (Hand between device)</td><td>0.40</td></tr>
+          <tr><th scope="row">M</th><td>Mental Preparation</td><td>1.35</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+        <h2>Example: Deleting a Character</h2>
+        <p>To delete a character, an expert might follow this sequence:</p>
+        <code>M (Mental Preparation) + P (Point to char) + K (Press Delete)</code>
+        <p>Total Time = 1.35 + 1.10 + 0.20 = <strong>2.65 seconds</strong>.</p>
+    </section>
+</main>
+    <footer>
+        <p>Reference: Dix, A., Human–Computer Interaction, Ch. 12.</p>
+        <p><a href="index.html">Return to Home</a></p>
+    </footer>
+</body>
+</html>

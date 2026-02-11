@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab Assignment 01 – Semantic HTML Foundations</title>
+
+  <style>
+    body { 
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+      color: #333;
+      background-color: #fdfdfd;
+    }
+    header { background-color: #2c3e50; color: white; }
+    .rule-box { background-color: #fff3cd; color: #856404; }
+    .note-box { background-color: #e7f3ff; color: #0c5460; }
+    .warning  { color: #7a1f1f; }
+    .answer-text { color: #155724; background-color: #d4edda; }
+    footer { font-size: 0.9em; color: #666; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Lab Practice &amp; Assignment 01</h1>
+    <p>
+      Semantic HTML foundations using Norman, GOMS, and KLM 
+      (Ref: Dix et al., Ch. 9 &amp; 12)
+    </p>
+  </header>
+
+  <main>
+    <section class="note-box">
+      <h2>Project Objectives</h2>
+      <p>
+        The goal is to demonstrate mastery of <strong>Semantic HTML</strong> and <strong>Accessibility</strong> 
+        while analyzing HCI models. Content focuses on the "Automatic Syringe" case study and the 
+        "Who Paid?" social-technical problem.
+      </p>
+    </section>
+
+    <section>
+      <h2>Lab Exam Practice: Completed Solutions</h2>
+      <p>This section demonstrates the identifying of HTML mistakes and the application of HCI theory.</p>
+
+      <h3>Part A: Find Mistakes (Mistake Identified + Fixed)</h3>
+      <table border="1">
+        <caption>Identification and correction of semantic/accessibility errors</caption>
+        <thead>
+          <tr>
+            <th scope="col">UI Issue</th>
+            <th scope="col">The Mistake</th>
+            <th scope="col">Corrected HTML</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Navigation List</th>
+            <td>The <code>&lt;a&gt;</code> is a direct child of <code>&lt;ul&gt;</code>; it must be wrapped in an <code>&lt;li&gt;</code>.</td>
+            <td><code>&lt;nav&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/nav&gt;</code></td>
+          </tr>
+          <tr>
+            <th scope="row">Form Labels</th>
+            <td>The <code>for</code> attribute in the label does not match the <code>id</code> of the textarea.</td>
+            <td><code>&lt;label for="msg"&gt;...&lt;/label&gt;&lt;textarea id="msg"&gt;&lt;/textarea&gt;</code></td>
+          </tr>
+          <tr>
+            <th scope="row">Heading Level</th>
+            <td>Hierarchy error: Skipping from <code>&lt;h1&gt;</code> directly to <code>&lt;h3&gt;</code>.</td>
+            <td><code>&lt;h1&gt;Title&lt;/h1&gt;&lt;h2&gt;Subtitle&lt;/h2&gt;</code></td>
+          </tr>
+        </tbody>
+      </table>
+
+      
+
+      <h3>Part B: True / False (Answered)</h3>
+      <ul>
+        <li><strong>True:</strong> Every link inside <code>&lt;ul&gt;</code> must be placed inside an <code>&lt;li&gt;</code> for list semantics.</li>
+        <li><strong>False:</strong> A page should have only one <code>&lt;h1&gt;</code>; use CSS for sizing, not heading tags.</li>
+        <li><strong>True:</strong> <code>aria-current="page"</code> is essential for screen readers to identify the current location.</li>
+        <li><strong>False:</strong> Forms are inaccessible without <code>&lt;label&gt;</code> because inputs lack programmatic names.</li>
+        <li><strong>True:</strong> KLM predicts execution time only for <strong>expert, error-free</strong> performance.</li>
+      </ul>
+
+      <h3>Part C: Short Answer (HCI Theory)</h3>
+      <article class="answer-text">
+        <h4>1. Semantic vs. Generic Elements</h4>
+        <p>
+          A <strong>semantic element</strong> (e.g., <code>&lt;nav&gt;</code>) clearly describes its meaning 
+          to both the browser and the developer, assisting in accessibility and SEO. A <strong>generic 
+          element</strong> (e.g., <code>&lt;div&gt;</code>) has no inherent meaning and is used purely 
+          for grouping or styling.
+        </p>
+      </article>
+
+      
+
+      <article class="answer-text">
+        <h4>2. Why KLM ignores high-level planning?</h4>
+        <p>
+          According to <strong>Dix Ch. 12</strong>, the Keystroke Level Model (KLM) is designed to 
+          predict the physical motor actions of an expert. It assumes the <strong>"Goal"</strong> 
+          and <strong>"Plan"</strong> (from Norman's cycle) are already decided. KLM only models the 
+          <strong>"Execute"</strong> stage where the user performs routine, error-free tasks.
+        </p>
+      </article>
+    </section>
+
+  </main>
+
+  <footer>
+    <p><a href="index.html">Return to Home</a></p>
+  </footer>
+
+</body>
+</html>

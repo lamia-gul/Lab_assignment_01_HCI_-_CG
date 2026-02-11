@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Errors - Lab 01</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>HTML Error Section: Identifying Correct Semantic Use</h1>
+    </header>
+
+
+    <main>
+        <section>
+            <h2>10 Common HTML & Accessibility Errors</h2>
+            <table border="1">
+                <caption>Correcting Common Mistakes</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Error Description</th>
+                        <th scope="col">Wrong Code</th>
+                        <th scope="col">Corrected Code</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Link directly in UL</td>
+                        <td class="wrong"><code>&lt;ul&gt;&lt;a&gt;...&lt;/a&gt;&lt;/ul&gt;</code></td>
+                        <td class="correct"><code>&lt;ul&gt;&lt;li&gt;&lt;a&gt;...&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Multiple H1 Tags</td>
+                        <td class="wrong">Two <code>&lt;h1&gt;</code> on one page</td>
+                        <td class="correct">Exactly one <code>&lt;h1&gt;</code> per page</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>No Label Association</td>
+                        <td class="wrong"><code>&lt;input id="n"&gt; Name</code></td>
+                        <td class="correct"><code>&lt;label for="n"&gt;Name&lt;/label&gt;&lt;input id="n"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Skipping Headings</td>
+                        <td class="wrong"><code>&lt;h1&gt;</code> then <code>&lt;h3&gt;</code></td>
+                        <td class="correct"><code>&lt;h1&gt;</code> then <code>&lt;h2&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Missing Alt Text</td>
+                        <td class="wrong"><code>&lt;img src="x.jpg"&gt;</code></td>
+                        <td class="correct"><code>&lt;img src="x.jpg" alt="Description"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Vague Links</td>
+                        <td class="wrong"><code>&lt;a&gt;Click Here&lt;/a&gt;</code></td>
+                        <td class="correct"><code>&lt;a&gt;Download Dix Ch. 12&lt;/a&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>No Table Caption</td>
+                        <td class="wrong"><code>&lt;table&gt;...&lt;/table&gt;</code></td>
+                        <td class="correct"><code>&lt;table&gt;&lt;caption&gt;Info&lt;/caption&gt;...&lt;/table&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Table for Layout</td>
+                        <td class="wrong">Using <code>&lt;table&gt;</code> for grid alignment</td>
+                        <td class="correct">Use <code>&lt;section&gt;</code> or <code>&lt;article&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Div Soup</td>
+                        <td class="wrong">Using <code>&lt;div&gt;</code> for headers/nav</td>
+                        <td class="correct">Using <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Misplaced Nav</td>
+                        <td class="wrong"><code>&lt;nav&gt;</code> outside <code>&lt;body&gt;</code></td>
+                        <td class="correct"><code>&lt;nav&gt;</code> inside <code>&lt;body&gt;</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p><a href="index.html">Return to Home</a></p>
+    </footer>
+</body>
+</html>
